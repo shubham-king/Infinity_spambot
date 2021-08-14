@@ -1,7 +1,7 @@
 {
-  "name": "FATHER-SID-OP-SPAM-BOT",
+  "name": "INFINITY-SPAM-BOT",
   "description": "A POWERFULL AND FAST SPAM BOT .",
-  "logo": "https://telegra.ph/file/1c6a36ba592baf8654155.jpg",
+  "logo": "https://telegra.ph/file/950218d76ad7a3865a915.jpg",
   "keywords": [
     "spambot",
     "telegram",
@@ -30,7 +30,7 @@
       },
       "ALIVE_NAME": {
         "description": "APNAA NAME DAL LO YARR PING ME AAYEGA",
-        "value": "𝐒𝐈𝐃-𝐎𝐏-𝐒𝐏𝐀𝐌-𝐁𝐎𝐓",
+        "value": "『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』",
         "required": false
       },
       "API_HASH": {

@@ -148,8 +148,8 @@ async def _(e):
                 await event.edit("Join hogya Sirji")
             except Exception as e:
                     await event.edit(str(e))
-                else:
-                    await e.reply(usage, parse_mode=None, link_preview=None )
+         else:
+             await e.reply(usage, parse_mode=None, link_preview=None )
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\+leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\-leave"))

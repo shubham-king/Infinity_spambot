@@ -398,7 +398,11 @@ async def help(e):
         
         await e.reply(text, parse_mode=None, link_preview=None )
        
-        
+ 
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+
 
     
         

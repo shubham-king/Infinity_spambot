@@ -394,7 +394,7 @@ async def restart(e):
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name\n Powered by @Philips_bots"
+        text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.alive\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name\n Powered by @Philips_bots"
         
         await e.reply(text, parse_mode=None, link_preview=None )
        
@@ -404,7 +404,8 @@ async def help(e):
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 async def alive(e):
     if e.sender_id in SMEX_USERS:
-        text = "{ALIVE_PIC} 
+        text = "{ALIVE_PIC} 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』\n\n➤ Owner: {ALIVE_NAME}\n➤Creater: @Robottech_memeber\n➤Updates: @Philips_bots\n➤ © 「ʟᴇԍᴇɴᴅ ᴘнιʟιᴘs」"
+        await e.reply(text, parse_mode=None, link_preview=None )
 
     
         

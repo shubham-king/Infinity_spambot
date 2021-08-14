@@ -17,7 +17,6 @@ In this spam userbot you can use 3 account means 3 string session at a time.
 .dreplyraid <br>
 
 # Deploy Now 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shubham-king/dablu_robot)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shubham-king/Infinity_spambot)
 

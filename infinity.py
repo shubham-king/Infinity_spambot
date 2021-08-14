@@ -133,9 +133,9 @@ async def gifspam(e, smex):
         pass
 
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+join"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-join"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×join"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 async def _(e):
     usage = " MODULE NAME = JOIN\n\nCommand:\n\n.join <channel or Group>"
     if e.sender_id in SMEX_USERS:
@@ -152,9 +152,9 @@ async def _(e):
             else:
              await e.reply(usage, parse_mode=None, link_preview=None )
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+leave"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-leave"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×leave"))        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
@@ -176,9 +176,9 @@ async def _(e):
         
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+bigspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-bigspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×bigspam"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -214,9 +214,9 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+raid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-raid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×raid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -276,9 +276,9 @@ async def _(event):
         )           
             
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+replyraid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-replyraid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×replyraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
@@ -311,9 +311,9 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+dreplyraid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-dreplyraid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×dreplyraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 async def _(e):
     global que
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
@@ -349,9 +349,9 @@ async def _(e):
     
        
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+ping"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-ping"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×ping"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -366,9 +366,9 @@ async def ping(e):
         
         
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+restart"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-restart"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×restart"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
@@ -389,9 +389,9 @@ async def restart(e):
         quit()
 
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\+help"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\-help"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\×help"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
         text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name\n Powered by @Philips_bots"

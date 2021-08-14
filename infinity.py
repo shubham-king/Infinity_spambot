@@ -146,7 +146,7 @@ async def _(e):
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
                 await event.edit("Join hogya Sirji")
-                except Exception as e: 
+            except Exception as e:
                     await event.edit(str(e))
                 else:
                     await e.reply(usage, parse_mode=None, link_preview=None )

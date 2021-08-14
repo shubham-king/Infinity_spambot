@@ -402,7 +402,9 @@ async def help(e):
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-
+async def alive(e):
+    if e.sender_id in SMEX_USERS:
+        text = "{ALIVE_PIC} 
 
     
         

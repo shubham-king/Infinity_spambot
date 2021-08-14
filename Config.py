@@ -10,3 +10,4 @@ API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 ALIVE_NAME = getenv("ALIVE_NAME")
 SUDO = list(map(int, getenv("SUDO").split()))
+

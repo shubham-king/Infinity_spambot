@@ -115,7 +115,7 @@ async def start_infinity():
             pass
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(start_yukki())       
+loop.run_until_complete(start_infinity())       
 
 async def gifspam(e, smex):
     try:

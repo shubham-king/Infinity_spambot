@@ -10,6 +10,8 @@ News channel: <a  href="https://t.me/Philips_bots" alt="Philips Bot"> <img  src=
 
 # Whats New 
 In this spam userbot you can use 3 account means 3 string session at a time.
+
+
 <br> Available commands <br>
 .help <br>
 .ping <br>
@@ -20,6 +22,10 @@ In this spam userbot you can use 3 account means 3 string session at a time.
 .replyraid <br>
 .dreplyraid <br>
 
+<h3> NEW COMMAND ADDED <h3>
+ .alive : to check userbot is alive or not <br>
+ .ttraid : raid on any user in tamil language <br>
+   
 # Deploy Now 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shubham-king/Infinity_spambot)

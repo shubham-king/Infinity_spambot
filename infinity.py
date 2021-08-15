@@ -423,13 +423,13 @@ async def spam(e):
         infinity = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(infinity) == 2:
-            message = str(infinity[1])
+            message = str(infinity[3])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(infinity[0])
+            counter = int(infinity[1])
             for _ in range(counter):
                 reply = random.choice(TTRAID)
                 caption = f"{username} {reply}"
@@ -441,7 +441,7 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             c = b.first_name
-            counter = int(infinity[0])
+            counter = int(infinity[1])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(TTRAID)

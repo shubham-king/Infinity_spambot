@@ -360,7 +360,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"🤖 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n{ALIVE_NAME}\n\n『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』\n Powered by @Philips_bots ")
+        await event.edit(f"🤖 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n\nMASTER:{ALIVE_NAME}\n\n『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』\n Powered by @Philips_bots ")
 
 
 
@@ -423,13 +423,13 @@ async def spam(e):
         infinity = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(infinity) == 2:
-            message = str(infinity[3])
+            message = str(infinity[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(infinity[1])
+            counter = int(infinity[0])
             for _ in range(counter):
                 reply = random.choice(TTRAID)
                 caption = f"{username} {reply}"
@@ -441,7 +441,7 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             c = b.first_name
-            counter = int(infinity[1])
+            counter = int(infinity[0])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(TTRAID)

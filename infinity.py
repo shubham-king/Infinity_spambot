@@ -411,12 +411,12 @@ async def alive(e):
 
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
 
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = TTRAID\n\nCommand:\n\n.ttraid <count> <Username of User>\n\n.ttraid <count> <reply to a User>\n\nCount must be a integer.\n\m Abuse in tamil © Philips "
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -431,7 +431,7 @@ async def spam(e):
             username = f"[{c}](tg://user?id={g})"
             counter = int(infinity[0])
             for _ in range(counter):
-                reply = random.choice(RAID)
+                reply = random.choice(TTRAID)
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
@@ -444,7 +444,7 @@ async def spam(e):
             counter = int(infinity[0])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
-                reply = random.choice(RAID)
+                reply = random.choice(TTRAID)
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
@@ -466,7 +466,7 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(RRAID)),
+            message="""{}""".format(random.choice(TTRAID)),
             reply_to=event.message.id,
         )      
         

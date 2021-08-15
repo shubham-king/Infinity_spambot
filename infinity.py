@@ -404,7 +404,7 @@ async def help(e):
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 async def alive(e):
     if e.sender_id in SMEX_USERS:
-        text = " 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』\n\n\n Hey bruh I am alive  don't worry!\n\n\n➤ invalid \n➤ Creater: @Robottech_memeber\n➤ Updates: @Philips_bots\n © 「ʟᴇԍᴇɴᴅ ᴘнιʟιᴘs」"
+        text = " 『℡ιɴғιɴιтʏ ꜱρɑɱ ʙ❍т』\n\n\n Hey bruh I am alive  don't worry!\n\n\n➤ Py version: 3.9.6\n➤ Spam bot : On\n➤ Sudo user: True\n➤ Branch : Philips Main\n➤ Creater: @Robottech_memeber\n➤ Updates: @Philips_bots\n\n © 「ʟᴇԍᴇɴᴅ ᴘнιʟιᴘs」"
         await e.reply(text, parse_mode=None, link_preview=None )
 
     

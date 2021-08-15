@@ -1,5 +1,5 @@
 # INFINITY SPAM USERBOT
-<img src="https://telegra.ph/file/950218d76ad7a3865a915.jpg">
+<img src="https://telegra.ph/file/ad11ba61b5505bc087268.jpg">
 # About 
 This is a spam userbot for those who have no more accouts for connecting multi spam userbot!
 So we made easy for those who are waiting this spamuserbot.<

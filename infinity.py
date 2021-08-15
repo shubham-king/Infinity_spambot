@@ -412,8 +412,8 @@ async def alive(e):
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.ttraid"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = TTRAID\n\nCommand:\n\n.ttraid <count> <Username of User>\n\n.ttraid <count> <reply to a User>\n\nCount must be a integer.\n\m Abuse in tamil © Philips "
